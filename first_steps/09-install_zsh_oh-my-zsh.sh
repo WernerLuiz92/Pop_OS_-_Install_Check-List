@@ -18,13 +18,28 @@ instalar() {
     printf "${GREEN}Definindo o ${YELLOW}zsh${GREEN} como shell padrão${NO_COLOR}\n\n\n"
     chsh -s $(which zsh)
     
+    printf "${YELLOW}Atenção!!${GREEN} É necessário revalidar seu terminal. Vamos iniciar uma sessão em um terminal em modo ${RED}root${GREEN}!${NO_COLOR}\n"
+    printf "${GREEN}Nele basta você digitar '${RED}exit${GREEN}' e pressionar '${RED}enter${GREEN}' para retornar para a instalação.${NO_COLOR}\n\n"
+    
+while true; do
+    printf "Tecle ${RED}enter${GREEN} para continuar!\n"
+    read -p "-> " enter
+    case $enter in
+        * ) sudo su $USER; break;;
+    esac
+done
+    
     printf "${GREEN}Tudo pronto! Após iniciar a instalação do ${YELLOW}Oh My Zsh${GREEN} irá trocar seu shell para o ${YELLOW}zsh${GREEN} e encerrar o script.${NO_COLOR}\n\n"
 
     printf "${GREEN}Instalando o ${YELLOW}Oh My Zsh${GREEN} no seu ${LIGHT_CYAN}Pop!_OS${GREEN}.${NO_COLOR}\n"
 
-    sleep 5
-
-    sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
+while true; do
+    printf "Tecle ${RED}enter${GREEN} para continuar!\n"
+    read -p "-> " enter
+    case $enter in
+        * ) sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"; break;;
+    esac
+done
 }
 
 printf "O ${YELLOW}Zsh${NO_COLOR} além de diversas vantagens de interatividade, tem a vantagem de possuir um framework incrível, que aumenta ainda mais a sua capacidade.\n"
