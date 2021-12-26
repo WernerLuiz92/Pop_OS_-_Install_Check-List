@@ -46,7 +46,6 @@ sh ./first_steps/08-install_neofetch.sh
 
 printf "\n"
 
-printf "09 -> ${YELLOW}Instalar o ‘Zsh’ e o ‘Oh My Zsh’${NO_COLOR}:\n\n"
-sh ./first_steps/09-install_zsh_oh-my-zsh.sh
+printf "${LIGHT_GREEN}Tudo pronto!${NO_COLOR}\n\n"
 
 #end
