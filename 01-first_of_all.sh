@@ -4,6 +4,8 @@ LIGHT_GREEN='\033[1;32m'
 YELLOW='\033[1;33m'
 NO_COLOR='\033[0m'
 
+sudo apt update
+
 printf "01 -> ${YELLOW}Codecs Multimidia${NO_COLOR}:\n\n"
 sh ./first_steps/01-install_codecs.sh
 
@@ -46,8 +48,3 @@ printf "\n"
 
 printf "09 -> ${YELLOW}Instalar o ‘Zsh’ e o ‘Oh My Zsh’${NO_COLOR}:\n\n"
 sh ./first_steps/09-install_zsh_oh-my-zsh.sh
-
-printf "\n"
-
-printf "${LIGHT_GREEN}Tudo Pronto por aqui!${NO_COLOR}\n"
-
