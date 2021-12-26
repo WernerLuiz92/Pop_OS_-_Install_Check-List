@@ -17,14 +17,14 @@ instalar() {
 
     printf "${GREEN}Definindo o ${YELLOW}zsh${GREEN} como shell padrão${NO_COLOR}\n"
     chsh -s $(which zsh)
-
-    sudo su $USER
+    
+    printf "${GREEN}Tudo pronto! Após iniciar a instalação do Oh My Zsh irá trocar seu shell para o zsh e encerrar o script.${NO_COLOR}\n\n"
 
     printf "${GREEN}Instalando o ${YELLOW}Oh My Zsh${GREEN}} no seu ${LIGHT_CYAN}Pop!_OS${GREEN}.${NO_COLOR}\n"
 
-    sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
+    sleep 5
 
-    printf "${GREEN}Tudo pronto!${NO_COLOR}\n\n"
+    sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
 }
 
 printf "O ${YELLOW}Zsh${NO_COLOR} além de diversas vantagens de interatividade, tem a vantagem de possuir um framework incrível, que aumenta ainda mais a sua capacidade.\n"
@@ -39,4 +39,3 @@ while true; do
         * ) printf "Por favor, responda com ${LIGHT_GREEN}Y${NO_COLOR} para ${LIGHT_GREEN}SIM${NO_COLOR} ou ${LIGHT_RED}N${NO_COLOR} para ${LIGHT_RED}Nao${NO_COLOR}.\n\n";;
     esac
 done
-
