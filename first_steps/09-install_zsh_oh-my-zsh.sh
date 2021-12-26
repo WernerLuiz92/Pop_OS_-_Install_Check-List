@@ -15,12 +15,12 @@ instalar() {
 
     printf "${GREEN}O ${YELLOW}$(zsh --version)${GREEN} foi instalado com sucesso!${NO_COLOR}\n"
 
-    printf "${GREEN}Definindo o ${YELLOW}zsh${GREEN} como shell padrão${NO_COLOR}\n"
+    printf "${GREEN}Definindo o ${YELLOW}zsh${GREEN} como shell padrão${NO_COLOR}\n\n\n"
     chsh -s $(which zsh)
     
-    printf "${GREEN}Tudo pronto! Após iniciar a instalação do Oh My Zsh irá trocar seu shell para o zsh e encerrar o script.${NO_COLOR}\n\n"
+    printf "${GREEN}Tudo pronto! Após iniciar a instalação do ${YELLOW}Oh My Zsh${GREEN} irá trocar seu shell para o ${YELLOW}zsh${GREEN} e encerrar o script.${NO_COLOR}\n\n"
 
-    printf "${GREEN}Instalando o ${YELLOW}Oh My Zsh${GREEN}} no seu ${LIGHT_CYAN}Pop!_OS${GREEN}.${NO_COLOR}\n"
+    printf "${GREEN}Instalando o ${YELLOW}Oh My Zsh${GREEN} no seu ${LIGHT_CYAN}Pop!_OS${GREEN}.${NO_COLOR}\n"
 
     sleep 5
 
@@ -39,3 +39,5 @@ while true; do
         * ) printf "Por favor, responda com ${LIGHT_GREEN}Y${NO_COLOR} para ${LIGHT_GREEN}SIM${NO_COLOR} ou ${LIGHT_RED}N${NO_COLOR} para ${LIGHT_RED}Nao${NO_COLOR}.\n\n";;
     esac
 done
+
+#end

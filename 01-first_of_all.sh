@@ -48,3 +48,5 @@ printf "\n"
 
 printf "09 -> ${YELLOW}Instalar o ‘Zsh’ e o ‘Oh My Zsh’${NO_COLOR}:\n\n"
 sh ./first_steps/09-install_zsh_oh-my-zsh.sh
+
+#end
